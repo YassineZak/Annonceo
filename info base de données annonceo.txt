@@ -1,0 +1,4 @@
+ Hôte de connexion (HOST) : cl1-sql23
+ Nom d'utilisateur (LOGIN) : shp77291
+ Nom de BASE : shp77291
+ Mot de passe (PASSWORD) : SQteSQY6uSLL

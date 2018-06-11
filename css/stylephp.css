@@ -1,0 +1,122 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************** fin reset meyer ***** ***********/
+
+
+
+header{
+  width: 100%;
+  background: #7c0031;
+  display: flex;
+}
+
+.logo{
+  width: 40%;
+  height: 100%;
+}
+.titre{
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 310%;
+  color: #816bb2;
+  margin-left: -20%;
+}
+.logo img {
+	width: 25%;
+	height: 25%;
+  padding: 5%;
+  margin-left: 40%;
+}
+main{
+  background: rgba(129, 107, 178, 0.5);
+  width: 100%;
+	height: 1000px;
+}
+.pseudo{
+	margin-top: 0;
+	padding-top: 5%;
+}
+#formulaire{
+	width: 80%;
+	text-align: center;
+  margin-left: 9%;
+  font-weight: bolder;
+  font-size: 220%;
+  color: #7c0031;
+}
+label{
+	display: block;
+	margin: 3%;
+}
+.pseudo1{
+font-family: 'Lobster', cursive;
+}
+#blog{
+	width: 70%;
+	height: 30%;
+	background: white;
+	margin-left: 13%;
+	margin-top: 5%;
+	padding: 2%;
+	overflow: auto;
+}
+.text{
+	color: #7c0031;
+	font-size: 200%;
+	padding: 10px;
+	font-family: 'Lobster', cursive;
+}
+.date{
+	font-family: 'Orbitron', sans-serif;
+}

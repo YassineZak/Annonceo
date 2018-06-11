@@ -1,0 +1,33 @@
+              <?php
+
+              //Affichage des pages
+
+              $sequence='';
+
+              if ($pageActuelle > 1):
+                  ?><a href="?page=<?php echo $pageActuelle - 1; ?>">< </a><?php
+              endif;
+
+              /* On va effectuer une boucle autant de fois que l'on a de pages */
+              for ($i = 1; $i <= $nombreDePages; $i++){
+                if ($i==$pageActuelle){
+                ?>
+                <a class="rouge" href="?page=<?php echo $i; ?>"><?php echo $i; ?> </a>
+              <?php
+
+              } else {
+
+              ?>
+
+                <a class="noir" href="?page=<?php echo $i; ?>"><?php echo $i; ?> </a>
+              	<?php
+
+              }
+              }
+              /* Avec le nombre total de pages, on peut aussi masquer le lien
+               * vers la page suivante quand on est sur la dernière */
+              if ($pageActuelle < $nombreDePages):
+                  ?><a href="?page=<?php echo $pageActuelle + 1; ?>">></a><?php
+              endif;
+
+              ?>

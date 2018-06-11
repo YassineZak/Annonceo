@@ -1,0 +1,1156 @@
+/****** nav *******/
+
+.conteneur-nav{
+  width: 100%;
+}
+.active{
+  font-family: 'Pacifico', cursive;
+  color: #7088a8;
+}
+#admin .dropdown-item {
+  padding: .25rem 0.5rem;
+  font-size: 14px;
+}
+.nav-link{
+  color: #112f60;
+}
+.btn-primary:hover{
+  cursor: pointer;
+}
+#contactForm{
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+	z-index: 1000;
+	width: 50%;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+
+}
+#contactForm input, #contactForm textarea{
+width: 85%;
+margin: auto;
+margin-top: 15px;
+}
+#contactForm button{
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+#connexion h5, #inscription, #depotAnnonce h5, #contactForm h3{
+  text-align: center;
+  color: #112f60;
+  padding-top: 20px;
+}
+#connexion input{
+  display: block;
+  margin : 40px;
+  width: 75%;
+}
+#connexion{
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+	z-index: 1000;
+	width: 20%;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+}
+#connexionOverlay {
+  opacity: 1;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 900;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+#inscription{
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 40%;
+  z-index: 1000;
+  width: 20%;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+  height: 90%;
+  overflow: auto;
+}
+#modificationProfil {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  z-index: 1000;
+  width: 30%;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+  margin: auto;
+
+}
+#modificationProfil input, #modificationProfil select{
+  display: block;
+  margin : 40px;
+  width: 75%;
+}
+#inscription input, #inscription select{
+  display: block;
+  margin : 40px;
+  width: 75%;
+}
+.page-link{
+  font-weight: bolder;
+}
+.image-upload img
+{
+    width: 90px;
+    cursor: pointer;
+}
+.image-upload{
+  margin-top: 20px;
+}
+.sy-caption-wrap{
+  display: none;
+}
+.sy-next{
+  display: none;
+}
+.sy-prev{
+  display: none;
+}
+.sy-caption{
+  display: none;
+}
+.carouselContainer{
+  width: 50%;
+}
+.annonceContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.sy-slides-wrap {
+    position: relative;
+    height: 400px;
+    width: 100%;}
+    .sy-slides-crop {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.sy-slide {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 400px;
+}
+.sy-slide a img{
+  object-fit: contain;
+}
+.thumbs{
+  margin-left: -5%;
+}
+.thumbs li{
+  height: 50px;
+  width: 20%;
+  text-align: center;
+  padding: 0 1%;
+  height: 100px;
+  list-style-type: none;
+}
+.thumbs li img {
+    height: 100px;
+  }
+  #select{
+  margin-left: 30%;
+  width: 45%;
+
+}
+.sy-slide > a > img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border: 0;
+    object-fit: contain;
+    height: 100%;}
+    .sy-slide > a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#depotAnnonce{
+  display: none;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  z-index: 1000;
+  width: 75%;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+}
+#depotAnnonceNonconnecte{
+  display: none;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  z-index: 1000;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  background: white;
+}
+#depotAnnonce h5{
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #7088a8;
+}
+#depotAnnonce input:not(#envoieAnnonce, #file-input1,#file-input2,#file-input3,#file-input4,#file-input5), #depotAnnonce select{
+  display: block;
+  margin : 20px;
+  width: 100%;
+}
+#file-input1,#file-input2,#file-input3,#file-input4,#file-input5
+{
+    display: none;
+}
+.depotAnnonce{
+  display: block;
+  font-weight: bold;
+  margin-top: 5%;
+  text-align: center;
+  color: #7088a8;
+}
+.texteDescription{
+  margin-bottom: 30px;
+}
+#envoieAnnonce{
+  width: 75%;
+  margin: 40px;
+  margin-left: 12%;
+  font-weight: bold;
+  font-size: 24px;
+}
+/************** caroussel ****************/
+#thumbnails{
+    z-index: 0;
+}
+
+.thumb-box {
+  z-index: 0;
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+  width: 102%;
+}
+.thumbs li {
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 0 1%;
+}
+.thumbs li img {
+        width: 100%;
+        opacity: .8;
+        @include transition(opacity .32s);
+        border-bottom: 4px solid transparent;
+      }
+.thumbs li img:hover {
+
+          opacity: 1;
+          @include  transition(opacity .2s);
+        }
+}
+/************* caroussel ********************/
+.gauche{
+  width: 35%;
+}
+.droite{
+  width: 35%;
+}
+.mapContainer{
+  margin-top: 2%;
+}
+/******* main *********/
+.titre {
+  font-family: 'Pacifico', cursive;
+  color: #7088a8;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.categorie {
+  display: block;
+  font-weight: bold;
+  margin-top: 5%;
+  color: #7088a8;
+}
+.taskOption{
+  width: 70%;
+  padding-left: 10px;
+  padding: 5px;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #7088a8;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #7088a8;
+    cursor: pointer;
+}
+#affiner{
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+}
+.conteneur-annonce{
+  float: right;
+  margin-right: 10%;
+  width: 60%;
+}
+.triprix{
+  margin-top: 5%;
+}
+.taskOption1{
+  width: 40%;
+  padding: 5px;
+  padding-left: 10px;
+}
+.conteneur-annonce img{
+  width: 120px;
+  height: 100px;
+}
+.conteneurAnonnce{
+  display: flex;
+}
+.conteneur-annonce .annonceTitre{
+  margin-left: 4%;
+
+  color: #7088a8;
+  font-weight: bold;
+}
+.conteneur-annonce p{
+ margin-left: 4%;
+  width: 90%;
+}
+.conteneur-annonce .annonceUser{
+  margin-left: 4%;
+  margin-top: 10px;
+  color: #7088a8;
+}
+.annonceUser i{
+  color: #ffb200;
+}
+.pseudoPrix{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.prix{
+  margin-left: 38%;
+  font-size: 18px;
+  color: #7088a8;
+  font-weight: bold;
+}
+#plus{
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 50%;
+}
+#plus .btn-secondary{
+  color: white
+}
+.conteneur-annonce .annonceShow{
+  margin-bottom: -30px;
+  padding-top: 5%;
+}
+.annonceShow a{
+  color: #112f60;
+}
+.annonceShow a:hover {
+  text-decoration:none;
+}
+.formAnnonce{
+width: 85%;
+}
+.open {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/************* Footer ******************/
+.footer{
+  clear: both;
+  width: 100%;
+  padding-top: 5%;
+}
+.footer ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.footer a:hover{
+  text-decoration: none;
+}
+
+
+/***************** responsive ***************/
+@media (max-width: 1450px){
+  .conteneur-annonce{
+    margin-right: 0%;
+  }
+  #affiner{
+    width: 100%;
+  }
+  .taskOption1{
+    width: 70%;
+  }
+  .taskOption{
+    width: 110%;
+  }
+  #annonceShow
+  {
+    margin-left: auto;
+  }
+  #select {
+    margin-left: 2%;
+    width: 65%;
+}
+.conteneurAnonnce{
+    margin-bottom: 30px;
+  }
+  #connexion, #inscription, #modificationProfil{
+    width: 35%;
+    top: 25%;
+    left: 35%;
+  }
+  #inscription, #modificationProfil{
+    top: 5%;
+    height: 90%;
+    overflow: auto;
+
+  }
+  #connexion input, #inscription input, #inscription select, #modificationProfil input, #modificationProfil select{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  .image-upload img
+  {
+      width: 80px;
+      cursor: pointer;
+  }
+  .image-upload{
+    margin-top: 20px;
+  }
+  .annonceContainer{
+    display: flex;
+    justify-content: space-around;
+  }
+  #depotAnnonce{
+    left: 5%;
+    top: 1%;
+    z-index: 1000;
+    width: 90%;
+    border-bottom: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+    background: white;
+  }
+  #depotAnnonce h5, {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #7088a8;
+  }
+  #depotAnnonce input:not(#envoieAnnonce, #file-input1,#file-input2,#file-input3,#file-input4,#file-input5), #depotAnnonce select{
+    display: block;
+    margin : 20px;
+    width: 100%;
+  }
+  #file-input1,#file-input2,#file-input3,#file-input4,#file-input5
+  {
+      display: none;
+  }
+  .depotAnnonce{
+    display: block;
+    font-weight: bold;
+    margin-top: 5%;
+    text-align: center;
+    color: #7088a8;
+  }
+  .texteDescription{
+    margin-bottom: 20px;
+  }
+  #envoieAnnonce{
+    width: 75%;
+    margin: 20px;
+    margin-left: 12%;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+}
+@media (max-width: 800px) {
+    .titre{
+      text-align: center;
+    }
+    #connexion, #inscription{
+      width: 80%;
+      top: 25%;
+      left: 10%;
+    }
+    #inscription{
+      top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    #select {
+    margin-left: auto;
+    width: 95%;
+  }
+    .formAnnonce{
+      margin:auto;
+    }
+    #connexion input, #inscription input{
+      margin-left: auto;
+    }
+    .conteneur-recherche{
+      display: none
+    }
+    .conteneur-annonce{
+      width: 100%;
+      margin: auto;
+    }
+    .taskOption1{
+      width: 90%;
+      margin: 10px;
+    }
+    .conteneurAnonnce{
+      display: block;
+    }
+    .conteneurAnonnce img{
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+    }
+    .pseudoPrix{
+      display: block;
+    }
+    .annoncedescription {
+      width: 95%;
+      margin-left: 5%;
+    }
+    .prix{
+      padding-left: 20%;
+      margin-left: 0%;
+    }
+    #plus {
+    width: 15%;
+    margin-left: 30%;
+  }
+
+
+  .conteneur-annonce .annonceTitre{
+    text-align: center;
+    margin-top: 15%;
+  }
+  .conteneur-annonce .annonceShow{
+    margin-left: 35%;
+  }
+  .footer ul{
+    display: block;
+    margin-top: 10%;
+    width: 95%;
+    padding : 0px;
+    text-align: center;
+  }
+  .annonceContainer{
+    display: block;
+  }
+  #depotAnnonce{
+    width: 85%;
+    overflow: auto;
+    height: 600px;
+  }
+  .gaucheAnnonce,.droiteAnnonce{
+    width: 90%;
+    margin: auto;
+  }
+  .gaucheAnnonce{
+    width: 40%;
+  }
+  .image-upload img
+  {
+      width: 25px;
+      cursor: pointer;
+      margin-left: 10px;
+  }
+  #envoieAnnonce{
+    width: 75%;
+    margin: 20px;
+    margin-left: 12%;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  #depotAnnonce h5{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7088a8;
+  }
+}
+/*********************** page annonce *************************/
+.titreContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 80%;
+}
+.titrePageAnnonce{
+  font-size: 30px;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #112f60;
+}
+.containerResponsive{
+  display: none;
+}
+.descriptionContainer{
+  display: flex;
+  width: 75%;
+  margin: auto;
+}
+.description{
+  width: 100%;
+}
+
+.coordonnees{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 90%;
+  margin: auto;
+  color: #112f60;
+  margin-top: 20px;
+}
+.description p {
+  margin-top: 12%;
+  padding-left: 20px;
+}
+.separation h2 {
+  text-align: center;
+}
+.separation{
+  padding-left: 20px;
+}
+#map-wrapper {
+
+	width: 75%;
+  margin: auto;
+	overflow: hidden;
+  box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
+}
+
+#places {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 0%;
+  display: none;
+}
+.autreAnnonce{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  list-style-type: none;
+}
+.autreAnnonce img{
+  width: 200px;
+  height: 150px;
+}
+#autreAnnonceTitre {
+  width: 75%;
+  margin: auto;
+  color: #112f60;
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+.listModal{
+  list-style-type: none;
+}
+.depotcom{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+}
+.separation{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.depotcommentaire, .depotnote{
+  width: 98%;
+  margin: auto;
+}
+.affichageCom{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #eaedf2;
+}
+#map {
+	width: 100%;
+	height: 250px;
+}
+@media (max-width: 1450px){
+  .sy-slide a img {
+      height: 400px;
+      min-height: 400px;
+      max-height: 400px;
+  }
+  #contactForm {
+    top: 6%;
+}
+}
+
+@media screen and (max-width: 1100px) {
+	#places, #map {
+		float: none;
+		width: auto;
+		margin-bottom: 1em;
+	}
+  #contactForm{
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+  left: 10%;
+  height: 70%;
+  overflow: auto;
+  }
+  #depotAnnonceNonconnecte{
+    width: 80%;
+    left: 9%;
+  }
+  .autreAnnonce img {
+    width: 95%;
+    height: 150px;
+    margin-top: 15px;
+}
+.autreAnnonce {
+    display: block;
+    width: 90%;
+    margin: auto;
+    list-style-type: none;
+}
+.affichageCom{
+  width: 90%;
+}
+.depotcom{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#autreAnnonceTitre {
+    width: 50%;
+    text-align: center;
+}
+.sy-slide a img {
+    height: 300px;
+    min-height: 200px;
+    max-height: 400px;
+}
+.titreContainer{
+  display: block;
+  margin-top: 15%;
+  width: 50%;
+  margin-left: auto;
+}
+.thumbs {
+    margin-left: -10%;
+}
+.containerResponsive{
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+	#places {
+		text-align: center;
+	}
+
+	#map {
+		width: 100%;
+	}
+  .descriptionContainer{
+    display: block;
+    width: 95%;
+  }
+  .separation{
+    width: 95%;
+    margin:auto;
+    padding-left: 1px;
+    margin-top: -11%;
+    height: 23em;
+  }
+  .carouselContainer {
+    width: auto;
+    margin: auto;
+    height: 26em;
+}
+
+.coordonnees {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    width: 90%;
+    margin: auto;
+    color: #112f60;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.coordonneesContainer{
+  margin-top: 2.5em;
+  height: 8em;
+}
+.autreAnnonce img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+#map-wrapper {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
+  }
+.separation :nth-child(3){
+  order: 1;
+}
+.separation :nth-child(2){
+  order: 2;
+}
+.separation :nth-child(3){
+  order: 1;
+}
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+}
+@media screen and (max-width: 800px) {
+  .carouselContainer {
+      height: auto;
+    }
+  .titreContainer{
+    margin-top: 4em;
+    margin-bottom: 3em;
+    width: 75%;
+  }
+
+  .coordonnees{
+    margin-top: 20em;
+    margin-left: 0%;
+  }
+  .coordonneesContainer{
+    margin-top: -54%;
+    height: 14em;
+  }
+  .mapContainer{
+    margin-top: -15%;
+  }
+  .autreAnnonce{
+    margin-left: 0%;
+  }
+  }
+/********************* Page Profil ***************************/
+#tableProfil{
+  width: 40%;
+  margin: auto;
+}
+.modif_profil{
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+#modificationProfil h3{
+  color: #112f60;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+#tableProfil i{
+  color: gold;
+}
+#titreProfil{
+  width: 30%;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  color: #112f60;
+}
+#tableannonce img{
+  width: 100px;
+  height: 100px;
+}
+.vosAnnonces h3{
+  width: 30%;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  color: #112f60;
+}
+.vosAnnonces table{
+  width: 85%;
+  margin: auto;
+}
+.commentaireMembre h3 {
+  width: 35%;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  color: #112f60;
+}
+.commentaireMembre table {
+  width: 75%;
+  margin: auto;
+}
+@media (max-width: 1450px){
+  #tableProfil {
+      width: 60%;
+      margin: auto;
+  }
+  #titreProfil {
+    width: 80%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .modif_profil {
+    width: 60%;
+  }
+}
+@media (max-width: 768px){
+  #tableProfil, #tableannonce {
+    width: 95%;
+    margin: auto;
+    font-size: 92%;
+
+  }
+  #tableannonce i{
+    padding-left: 5px;
+  }
+  #titreProfil {
+    width: 95%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .modif_profil {
+    width: 95%;
+  }
+  .vosAnnonces h3, .commentaireMembre h3{
+    width: 95%;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+#bootstrap-confirm-dialog-text{
+  text-align: center;
+  font-size: 120%;
+}
+/********** page gestion membre BO **********************/
+#tableauMembre{
+  width: 80%;
+}
+.modifMembre{
+display: block;
+width: 85%;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-image: none;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+margin : auto;
+margin-top: 15px;
+}
+/******************* update annonces **************************/
+#descriptionUpdate{
+  margin-left: 110%;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.ancienne{
+  text-align: center;
+  font-size: 22px;
+  color: #495057;
+}
+/*********************** Qui sommes nous **********************/
+.about{
+  background: #495057;
+  margin-top: -5%;
+}
+.intro{
+  text-align: center;
+  color: #7088a8;
+}
+.intro h1, .motCle h2 a, .motCle1 h2 a{
+  color: #7088a8;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+}
+.intro h1{
+  padding-top: 70px;
+}
+.motCle{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+.motCle1{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+}
+.content{
+  background: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #7088a8;
+  border-radius: 30px;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.content p{
+  text-align: center;
+  padding: 10px 20px;
+}
+.border{
+  height: 40%;
+}
+.footer_about{
+  width: 100%;
+  padding-top: 1%;
+}
+.footer_about ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.footer_about a:hover{
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .border {;
+    width: 100%;
+    margin: 0%;
+}
+  .content{
+    height: 30em;
+    overflow: auto;
+  }
+  .motCle, .motCle1{
+    display: none;
+  }
+  .footer_about ul{
+    display: block;
+    margin-top: 5;
+    width: 95%;
+    padding : 0px;
+    text-align: center;
+
+  }
+}
+.gaucheAnnonce{
+  width: 40%;
+}
