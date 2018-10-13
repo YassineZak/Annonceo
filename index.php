@@ -94,7 +94,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
   </head>
-  <body>
+  <body onload=alert('Hacked_By_An0n_J#')>
        <?php
         if ((isset($_SESSION['pseudo'])) && !empty($_SESSION['pseudo'])) {
           if ($_SESSION['statut'] == 1) {
